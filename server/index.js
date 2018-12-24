@@ -3,7 +3,7 @@ const { resolve } = require("path");
 const { connect, initSchemas } = require("./database/initDB");
 const R = require("ramda");
 
-const MIDDLEWARES = ["router"];
+const MIDDLEWARES = ["router", "parcel"];
 
 (async () => {
     await connect();
